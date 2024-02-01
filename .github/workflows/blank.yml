@@ -26,17 +26,18 @@ jobs:
       - uses: actions/checkout@v3
 
       # Runs a single command using the runners shell
-      - name: Build
-        run: dotnet build EmptyDB.sqlproj
-        
-      # Runs a single command using the runners shell
       - name: Install sqlpackage
         run: dotnet tool install -g microsoft.sqlpackage
+        
+      # Runs a single command using the runners shell
+      - name: Build
+        run: dotnet build EmptyDB.sqlproj  
+
 
       - uses: azure/sql-action@v2.2.1
         with:        
           connection-string: ${{ secrets.FABRIC_DW_CONNECTION_STRING }}
-          path: './bin/debug/Database.sqlproj'
+          path: 'EmptyDB.sqlproj'
           action: 'publish'
           arguments: '/p:DropObjectsNotInSource=false DiagnosticLog.log' 
           
