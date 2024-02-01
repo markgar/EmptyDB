@@ -36,7 +36,7 @@ jobs:
       - uses: azure/sql-action@v2.2.1
         with:        
           connection-string: ${{ secrets.FABRIC_DW_CONNECTION_STRING }}
-          path: './Database.sqlproj'
+          path: './bin/debug/Database.sqlproj'
           action: 'publish'
           arguments: '/p:DropObjectsNotInSource=false DiagnosticLog.log' 
           
