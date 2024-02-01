@@ -39,7 +39,7 @@ jobs:
           connection-string: ${{ secrets.FABRIC_DW_CONNECTION_STRING }}
           path: 'EmptyDB.sqlproj'
           action: 'publish'
-          arguments: '/p:DropObjectsNotInSource=false DiagnosticLog.log' 
+          arguments: '/p:DropObjectsNotInSource=false /DiagnosticsFile:DiagnosticLog.log' 
           
       - uses: actions/upload-artifact@v2
         with:
