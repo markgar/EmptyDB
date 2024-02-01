@@ -1,0 +1,33 @@
+CREATE TABLE [dbo].[DimCustomer] (
+    [CustomerKey]          INT             NULL,
+    [GeographyKey]         INT             NULL,
+    [CustomerAlternateKey] VARCHAR (8000)  NULL,
+    [Title]                VARCHAR (8000)  NULL,
+    [FirstName]            VARCHAR (8000)  NULL,
+    [MiddleName]           VARCHAR (8000)  NULL,
+    [LastName]             VARCHAR (8000)  NULL,
+    [NameStyle]            BIT             NULL,
+    [BirthDate]            DATE            NULL,
+    [MaritalStatus]        CHAR (1)        NULL,
+    [Suffix]               VARCHAR (8000)  NULL,
+    [Gender]               VARCHAR (8000)  NULL,
+    [EmailAddress]         VARCHAR (8000)  NULL,
+    [YearlyIncome]         DECIMAL (19, 4) NULL,
+    [TotalChildren]        INT             NULL,
+    [NumberChildrenAtHome] INT             NULL,
+    [EnglishEducation]     VARCHAR (8000)  NULL,
+    [SpanishEducation]     VARCHAR (8000)  NULL,
+    [FrenchEducation]      VARCHAR (8000)  NULL,
+    [EnglishOccupation]    VARCHAR (8000)  NULL,
+    [SpanishOccupation]    VARCHAR (8000)  NULL,
+    [FrenchOccupation]     VARCHAR (8000)  NULL,
+    [HouseOwnerFlag]       CHAR (1)        NULL,
+    [NumberCarsOwned]      INT             NULL,
+    [AddressLine1]         VARCHAR (8000)  NULL,
+    [AddressLine2]         VARCHAR (8000)  NULL,
+    [Phone]                VARCHAR (8000)  NULL,
+    [DateFirstPurchase]    DATE            NULL,
+    [CommuteDistance]      VARCHAR (8000)  NULL
+);
+GO
+

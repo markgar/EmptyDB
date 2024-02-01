@@ -1,0 +1,30 @@
+CREATE TABLE [dbo].[FactInternetSales] (
+    [ProductKey]            INT             NULL,
+    [OrderDateKey]          INT             NULL,
+    [DueDateKey]            INT             NULL,
+    [ShipDateKey]           INT             NULL,
+    [CustomerKey]           INT             NULL,
+    [PromotionKey]          INT             NULL,
+    [CurrencyKey]           INT             NULL,
+    [SalesTerritoryKey]     INT             NULL,
+    [SalesOrderNumber]      VARCHAR (8000)  NULL,
+    [SalesOrderLineNumber]  INT             NULL,
+    [RevisionNumber]        INT             NULL,
+    [OrderQuantity]         SMALLINT        NULL,
+    [UnitPrice]             DECIMAL (19, 4) NULL,
+    [ExtendedAmount]        DECIMAL (19, 4) NULL,
+    [UnitPriceDiscountPct]  FLOAT (53)      NULL,
+    [DiscountAmount]        FLOAT (53)      NULL,
+    [ProductStandardCost]   DECIMAL (19, 4) NULL,
+    [TotalProductCost]      DECIMAL (19, 4) NULL,
+    [SalesAmount]           DECIMAL (19, 4) NULL,
+    [TaxAmt]                DECIMAL (19, 4) NULL,
+    [Freight]               DECIMAL (19, 4) NULL,
+    [CarrierTrackingNumber] VARCHAR (8000)  NULL,
+    [CustomerPONumber]      VARCHAR (8000)  NULL,
+    [OrderDate]             DATETIME2 (3)   NULL,
+    [DueDate]               DATETIME2 (3)   NULL,
+    [ShipDate]              DATETIME2 (3)   NULL
+);
+GO
+
