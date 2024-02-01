@@ -29,11 +29,6 @@ jobs:
       - name: Install sqlpackage
         run: dotnet tool install -g microsoft.sqlpackage
         
-      # Runs a single command using the runners shell
-      - name: Build
-        run: dotnet build EmptyDB.sqlproj  
-
-
       - uses: azure/sql-action@v2.2.1
         with:        
           connection-string: ${{ secrets.FABRIC_DW_CONNECTION_STRING }}
