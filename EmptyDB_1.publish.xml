@@ -4,7 +4,7 @@
     <TargetDatabaseName>EmptyDB</TargetDatabaseName>
     <AllowIncompatiblePlatform>True</AllowIncompatiblePlatform>
     <DropPermissionsNotInSource>True</DropPermissionsNotInSource>
-    <DropObjectsNotInSource>True</DropObjectsNotInSource>
+    <DropObjectsNotInSource>False</DropObjectsNotInSource>
     <DropRoleMembersNotInSource>True</DropRoleMembersNotInSource>
     <IgnoreKeywordCasing>False</IgnoreKeywordCasing>
     <IgnoreSemicolonBetweenStatements>False</IgnoreSemicolonBetweenStatements>
