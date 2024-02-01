@@ -12,7 +12,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="EmptyDB_1.publish.xml" />
-    <None Include="EmptyDB_2.publish.xml" />
   </ItemGroup>
   <Target Name="BeforeBuild">
     <Delete Files="$(BaseIntermediateOutputPath)\project.assets.json" />
