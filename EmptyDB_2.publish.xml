@@ -2,6 +2,7 @@
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <TargetDatabaseName>Empty</TargetDatabaseName>
+    <TargetConnectionString>Data Source=42rx55inbfzu7o3vsmf7wgp3fi-aoh4xirpfmse5gkk3ch2pnkkni.datawarehouse.pbidedicated.windows.net;User ID=mgarner@demo-mg.com;Connect Timeout=30;Authentication=ActiveDirectoryInteractive;Application Name=azdata;Command Timeout=30</TargetConnectionString>
     <AllowIncompatiblePlatform>True</AllowIncompatiblePlatform>
     <DropPermissionsNotInSource>True</DropPermissionsNotInSource>
     <DropObjectsNotInSource>False</DropObjectsNotInSource>
